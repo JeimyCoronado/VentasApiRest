@@ -12,7 +12,7 @@ import com.idat.springbootapirestventas.app.entity.Producto;
 import com.idat.springbootapirestventas.app.service.IProductoService;
 
 
-@CrossOrigin(origins = {"http://localhost:4200"})
+@CrossOrigin()
 @RestController
 @RequestMapping("/api")
 public class ProductoController {

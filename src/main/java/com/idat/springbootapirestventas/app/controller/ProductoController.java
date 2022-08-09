@@ -14,12 +14,11 @@ import com.idat.springbootapirestventas.app.service.IProductoService;
 
 @CrossOrigin()
 @RestController
-@RequestMapping("/api")
 public class ProductoController {
 
 	@Autowired
 	private IProductoService productoDao;
-	@GetMapping("/productos")
+	@GetMapping("/")
 	public List<Producto> index(){
 		return productoDao.listarProducto();
 	}

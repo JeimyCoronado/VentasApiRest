@@ -1,11 +1,12 @@
 package com.idat.springbootapirestventas.app;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.ComponentScan;
+import org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration;
 
 @SpringBootApplication
-@ComponentScan({"com.idat.springbootapirestventas.app/controller"})
+@EnableAutoConfiguration(exclude = {ErrorMvcAutoConfiguration.class})
 public class SpringBootApirestVentasApplication {
 
 	public static void main(String[] args) {
